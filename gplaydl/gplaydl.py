@@ -56,7 +56,8 @@ def sizeof_fmt(num):
 
 
 def configureauth():
-    print(os.environ["GOOGLE_EMAIL"])
+    printf("---------------------------------")
+    printf(os.environ["GOOGLE_EMAIL"])
     email = os.environ.get('GOOGLE_EMAIL')
     password = os.environ.get('GOOGLE_PASSWORD')
     while email is None:
