@@ -61,7 +61,7 @@ def configureauth():
     email = os.environ.get('GOOGLE_EMAIL')
     password = os.environ.get('GOOGLE_PASSWORD')
     while email is None:
-        em = input('Google Email: ').strip()
+        em = input('Google Email:: ').strip()
         if validators.email(em):
             email = em
         else:
